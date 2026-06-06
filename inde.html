@@ -1,1 +1,13 @@
-<img src="https://i.ibb.co/KzBK5R3k/FB-IMG-1775399028226.jpg" class="profile-photo" alt="Ilyas Abdi Ali">
+const img = document.createElement('img');
+img.src = 'https://i.imgur.com/https://i.ibb.co/KzBK5R3k/FB-IMG-1775399028226.jpg'; // 
+img.alt = 'ILYAS ABDI ALI - Aasaasaha';
+img.width = 200;
+img.height = 200;
+img.style.borderRadius = '50%';
+img.style.border = '4px solid #FFD700';
+img.style.boxShadow = '0 0 30px rgba(255, 215, 0, 0.6)';
+img.style.objectFit = 'cover';
+
+// Add to the about section on your site
+const aboutSection = document.querySelector('.about-section') || document.body;
+aboutSection.prepend(img);
